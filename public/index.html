@@ -206,11 +206,7 @@
         >
           <span class="text-lg m-auto">🔝</span>
         </div>
-        <div
-          class="w-10 h-10 bg-pink-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer"
-        >
-          <a href="#" class="text-lg m-auto">🔝</a>
-        </div>
+
         <img
           src="img/2.jpeg"
           alt="laptop"
@@ -382,6 +378,70 @@
       </div>
     </div>
 
+    <div
+      class="mt-64 p-2 font-nunito grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4"
+    >
+      <h2
+        class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"
+      >
+        <span class="self-center">Welcome to my gallery</span>
+      </h2>
+      <div
+        class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"
+      >
+        <span class="self-end">@dannyhimawan__</span>
+      </div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden"
+      >
+        <div
+          class="w-full h-full bg-[url('/img/f1.jpeg')] bg-cover bg-center"
+        ></div>
+      </div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden"
+      >
+        <div
+          class="w-full h-full bg-[url('/img/f2.jpeg')] bg-cover bg-center"
+        ></div>
+      </div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3]"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3]"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3]"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3]"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2"
+      ></div>
+      <div
+        class="h-15 bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4"
+      ></div>
+    </div>
+
+    <div class="hidden bg-transparent" id="top-scroll">
+      <div
+        class="w-10 h-10 bg-pink-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer transition"
+      >
+        <a href="#" class="text-lg m-auto">🔝</a>
+      </div>
+    </div>
+
     <div class="mb-96"></div>
 
     <script>
@@ -392,6 +452,14 @@
         checkbox.checked
           ? html.classList.add("dark")
           : html.classList.remove("dark");
+      });
+
+      const topScroll = document.getElementById("top-scroll");
+
+      window.addEventListener("scroll", function () {
+        window.scrollY > 0
+          ? topScroll.classList.remove("hidden")
+          : topScroll.classList.add("hidden");
       });
     </script>
   </body>
