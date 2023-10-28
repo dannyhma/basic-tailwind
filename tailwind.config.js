@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -15,6 +16,20 @@ module.exports = {
       },
       fontFamily: {
         nunito: ['Nunito'],
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'dance': 'dance 5s ease-in-out infinite'
+      },
+      keyframes:{
+        dance: {
+          '0%, 100%': {
+            transform: 'rotate(-15deg)',
+          },
+          '50%':{
+            transform: 'rotate(15deg)',
+          },
+        }
       },
     },
   },
