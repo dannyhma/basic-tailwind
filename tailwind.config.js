@@ -31,19 +31,6 @@ module.exports = {
           },
         }
       },
-      backgroundImage: {
-        'f1': "url('./public/img/f1.jpeg')",
-        'f2': "url('./public/img/f2.jpeg')",
-        'f3': "url('./public/img/f3.jpeg')",
-        'f4': "url('./public/img/f4.jpeg')",
-        'f5': "url('./public/img/f5.jpeg')",
-        'f6': "url('./public/img/f6.jpeg')",
-        'f7': "url('./public/img/f7.jpeg')",
-        'f8': "url('./public/img/f8.jpeg')",
-        'f9': "url('./public/img/f9.jpeg')",
-        'f10': "url('./public/img/f10.jpeg')",
-        'f11': "url('./public/img/f11.jpeg')",
-      }
     },
   },
   plugins: [],
