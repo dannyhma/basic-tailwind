@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
-#toggle:checked ~ label div.toggle-circle {
-  @apply translate-x-4 transition duration-1000;
+@layer utilities {
+  #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-4 transition;
+  }
+}
+
+@layer components {
+  .grid-card {
+    @apply relative bg-blue-500 aspect-[4/3] rounded-lg shadow-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden hover:scale-90 transition-all duration-500;
+  }
+
+  .grid-card-img {
+    @apply w-full h-full absolute bg-cover bg-center bg-no-repeat group-hover:scale-125 group-hover:rotate-12 transition-all duration-500;
+  }
 }

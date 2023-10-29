@@ -29,7 +29,7 @@ module.exports = {
           '50%':{
             transform: 'rotate(15deg)',
           },
-        }
+        },
       },
     },
   },
