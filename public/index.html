@@ -115,12 +115,14 @@
 
     <div class="flex justify-center">
       <span class="text-sm text-slate-500 mr-2">Light</span>
-      <input type="checkbox" id="toggle" class="hidden" />
+      <input type="checkbox" id="toggle" class="hidden" aria-label="toggle" />
       <label for="toggle">
         <div
           class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-0.5 cursor-pointer"
         >
-          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+          <div
+            class="w-4 h-4 bg-white rounded-full toggle-circle transition duration-300 ease-in-out"
+          ></div>
         </div>
       </label>
       <span class="text-sm text-slate-500 ml-2">Dark</span>

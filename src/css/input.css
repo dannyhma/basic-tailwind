@@ -6,7 +6,7 @@
 
 @layer utilities {
   #toggle:checked ~ label div.toggle-circle {
-    @apply translate-x-4 transition;
+    @apply translate-x-4;
   }
 }
 
